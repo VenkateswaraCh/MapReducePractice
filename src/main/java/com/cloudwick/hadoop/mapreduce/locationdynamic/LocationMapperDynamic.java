@@ -17,6 +17,7 @@ public class LocationMapperDynamic extends Mapper<LongWritable, Text, Text, Text
 			throws IOException, InterruptedException {
 		// TODO Auto-generated method stub
 		String line =value.toString();
+		
 		set=line.split(",");
 		String temp=null;
 		Configuration conf = context.getConfiguration();

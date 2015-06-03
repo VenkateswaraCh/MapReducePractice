@@ -35,8 +35,8 @@ public class LocationDynamic extends Configured implements Tool {
         job.setMapperClass(LocationMapperDynamic.class);
         job.setMapOutputKeyClass(Text.class);
         job.setMapOutputValueClass(Text.class);
-        
-        
+        job.setNumReduceTasks(0);   
+         
         if (job.waitForCompletion(true)) {
             return 0;
         }
