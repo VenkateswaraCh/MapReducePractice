@@ -17,6 +17,7 @@ public class LocationDynamic extends Configured implements Tool {
 		// TODO Auto-generated method stub
 		if(args.length!=3)
 		{
+			
 			System.out.printf("Usage: %s [generic options] <input dir> <output dir>\n", getClass()
                     .getSimpleName());
 			ToolRunner.printGenericCommandUsage(System.out);
